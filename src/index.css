@@ -36,24 +36,43 @@ h1 {
   line-height: 1.1;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
+.button-warm {
+  margin: 5px 5px 0 0;
+  background-color: #f9a825;
+  color: #fff;
+  border-radius: 4px;
+  padding: 0.5em 1em;
   font-size: 1em;
   font-weight: 500;
-  font-family: inherit;
-  background-color: red;
+  border: none;
   cursor: pointer;
-  transition: border-color 0.25s;
-  color: white;
+  transition: background-color 0.2s ease-in-out;
 }
-button:hover {
-  border-color: #646cff;
+
+.button-danger {
+  margin: 5px 5px 0 0;
+  background-color: #ff5252;
+  color: #fff;
+  border-radius: 4px;
+  padding: 0.5em 1em;
+  font-size: 1em;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
 }
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+
+.button-primary {
+  margin: 5px 5px 0 0;
+  background-color: #242424;
+  color: #fff;
+  border-radius: 4px;
+  padding: 0.5em 1em;
+  font-size: 1em;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
 }
 
 @media (prefers-color-scheme: light) {
@@ -63,10 +82,6 @@ button:focus-visible {
   }
   a:hover {
     color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-    background-color: red;
   }
 }
 .todo-list {
